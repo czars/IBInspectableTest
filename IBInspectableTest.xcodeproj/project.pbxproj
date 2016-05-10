@@ -15,6 +15,12 @@
 		88C6B0D91CE22A1000C17723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0D71CE22A1000C17723 /* LaunchScreen.storyboard */; };
 		88C6B0E41CE22A1100C17723 /* IBInspectableTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C6B0E31CE22A1100C17723 /* IBInspectableTestTests.m */; };
 		88C6B0EF1CE22A1100C17723 /* IBInspectableTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C6B0EE1CE22A1100C17723 /* IBInspectableTestUITests.m */; };
+		88C6B0FF1CE22A1D00C17723 /* TSProductSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */; };
+		88C6B1001CE22A1D00C17723 /* TSProductSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */; };
+		88C6B1011CE22A1D00C17723 /* TSProductSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */; };
+		88C6B1021CE22A1D00C17723 /* TSProductSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */; };
+		88C6B1031CE22A1D00C17723 /* TSProductSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */; };
+		88C6B1041CE22A1D00C17723 /* TSProductSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,9 @@
 		88C6B0EA1CE22A1100C17723 /* IBInspectableTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBInspectableTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C6B0EE1CE22A1100C17723 /* IBInspectableTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBInspectableTestUITests.m; sourceTree = "<group>"; };
 		88C6B0F01CE22A1100C17723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C6B0FC1CE22A1D00C17723 /* TSProductSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProductSwitch.h; sourceTree = "<group>"; };
+		88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProductSwitch.m; sourceTree = "<group>"; };
+		88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSProductSwitch.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				88C6B0CD1CE22A1000C17723 /* AppDelegate.m */,
 				88C6B0CF1CE22A1000C17723 /* ViewController.h */,
 				88C6B0D01CE22A1000C17723 /* ViewController.m */,
+				88C6B0FC1CE22A1D00C17723 /* TSProductSwitch.h */,
+				88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */,
+				88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */,
 				88C6B0D21CE22A1000C17723 /* Main.storyboard */,
 				88C6B0D51CE22A1000C17723 /* Assets.xcassets */,
 				88C6B0D71CE22A1000C17723 /* LaunchScreen.storyboard */,
@@ -248,6 +260,7 @@
 			files = (
 				88C6B0D91CE22A1000C17723 /* LaunchScreen.storyboard in Resources */,
 				88C6B0D61CE22A1000C17723 /* Assets.xcassets in Resources */,
+				88C6B1021CE22A1D00C17723 /* TSProductSwitch.xib in Resources */,
 				88C6B0D41CE22A1000C17723 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C6B1031CE22A1D00C17723 /* TSProductSwitch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C6B1041CE22A1D00C17723 /* TSProductSwitch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +290,7 @@
 			files = (
 				88C6B0D11CE22A1000C17723 /* ViewController.m in Sources */,
 				88C6B0CE1CE22A1000C17723 /* AppDelegate.m in Sources */,
+				88C6B0FF1CE22A1D00C17723 /* TSProductSwitch.m in Sources */,
 				88C6B0CB1CE22A1000C17723 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C6B1001CE22A1D00C17723 /* TSProductSwitch.m in Sources */,
 				88C6B0E41CE22A1100C17723 /* IBInspectableTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C6B1011CE22A1D00C17723 /* TSProductSwitch.m in Sources */,
 				88C6B0EF1CE22A1100C17723 /* IBInspectableTestUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

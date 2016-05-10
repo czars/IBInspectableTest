@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TSProductSwitch">
+            <connections>
+                <outlet property="SwitchButton" destination="ayb-i6-BA4" id="Ycw-fY-ejt"/>
+                <outlet property="animationImageView" destination="Ygs-gH-ds0" id="qjz-sX-FsH"/>
+                <outlet property="checkBoxImageView" destination="UMy-P2-K4H" id="0Nz-o7-CP2"/>
+                <outlet property="titleLabel" destination="bIC-mB-deI" id="tAO-Ya-xGw"/>
+                <outlet property="uncheckBoxImageView" destination="g0n-7n-CQb" id="GbC-BS-v3i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_selection_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ygs-gH-ds0">
+                    <rect key="frame" x="0.0" y="0.0" width="360" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_product_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="g0n-7n-CQb">
+                    <rect key="frame" x="19" y="7" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="9On-Ns-NAP"/>
+                        <constraint firstAttribute="width" constant="22" id="ChM-rg-UnQ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="JIR-BH-Rb0"/>
+                        <constraint firstAttribute="height" constant="22" id="zfx-K7-axA"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_product_selected" translatesAutoresizingMaskIntoConstraints="NO" id="UMy-P2-K4H">
+                    <rect key="frame" x="19" y="7" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="gHF-aD-dSN"/>
+                        <constraint firstAttribute="height" constant="22" id="tcJ-D6-nDA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIC-mB-deI">
+                    <rect key="frame" x="78" y="7" width="135" height="21"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayb-i6-BA4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <connections>
+                        <action selector="pressSwitchButton:" destination="-1" eventType="touchUpInside" id="02M-Me-BRK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ygs-gH-ds0" secondAttribute="bottom" id="3uP-2K-DRz"/>
+                <constraint firstAttribute="trailing" secondItem="ayb-i6-BA4" secondAttribute="trailing" id="8Ja-hB-IOG"/>
+                <constraint firstItem="Ygs-gH-ds0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9fF-Jo-Ndx"/>
+                <constraint firstItem="Ygs-gH-ds0" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="40" id="AjS-1L-Pd0"/>
+                <constraint firstItem="UMy-P2-K4H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="DcE-rx-pyb"/>
+                <constraint firstItem="ayb-i6-BA4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fwu-Gb-6QM"/>
+                <constraint firstItem="g0n-7n-CQb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="HL0-es-YDR"/>
+                <constraint firstItem="UMy-P2-K4H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="Jjm-dw-Vtd"/>
+                <constraint firstItem="g0n-7n-CQb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="PAx-9u-lY1"/>
+                <constraint firstItem="g0n-7n-CQb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QGi-lW-cIP"/>
+                <constraint firstItem="UMy-P2-K4H" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TPI-Qn-TXp"/>
+                <constraint firstAttribute="bottom" secondItem="ayb-i6-BA4" secondAttribute="bottom" id="XyD-U9-p13"/>
+                <constraint firstItem="ayb-i6-BA4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l0l-Bg-aKW"/>
+                <constraint firstItem="Ygs-gH-ds0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="obh-rZ-oFX"/>
+                <constraint firstItem="bIC-mB-deI" firstAttribute="leading" secondItem="UMy-P2-K4H" secondAttribute="trailing" constant="37" id="pRP-7p-gsL"/>
+                <constraint firstItem="bIC-mB-deI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zxK-BM-vcx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Jjm-dw-Vtd"/>
+                    <exclude reference="HL0-es-YDR"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="17" y="249.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_product_selected" width="44" height="44"/>
+        <image name="icon_product_unselected" width="44" height="44"/>
+        <image name="product_selection_bg" width="718" height="70"/>
+    </resources>
+</document>
