@@ -32,7 +32,6 @@
 
 -(void)commonInit{
     UIView *view = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"TSProductSwitch" owner:self options:nil] firstObject];
-//    view.frame = self.bounds;
     [self addSubview:view];
 
     view.translatesAutoresizingMaskIntoConstraints = NO;
@@ -46,22 +45,26 @@
     }else if ([UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft){
         _reverseAnimation = YES;
     }
+    _fontSize = 10;
+    _isOn = NO;
+    
+    
+//    [self setOn:_isOn];
 }
 
 -(void)setOn:(BOOL)on{
-    self.isOn = on;
     [self.animationImageView setHidden:!on];
     [self.uncheckBoxImageView setHidden:on];
+    [self.checkBoxImageView setHidden:!on];
     self.checkBoxImageView.layer.transform = CATransform3DMakeScale(on?1:0.00000001, on?1:0.00000001, on?1:0.00000001);
-//    [self.checkBoxImageView setImage:on?[UIImage imageNamed:@"icon_product_selected"]:[UIImage imageNamed:@"icon_product_unselected"]];
     if (on) {
 //        self.titleLabel.text = NSLocalizedString(@"added", @"ADDED");
-        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:10];
+        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
         self.titleLabel.textColor = COLOR_DARK_TEXT;
         
     }else{
 //        self.titleLabel.text = NSLocalizedString(@"add_to_your_booking", @"ADD TO YOUR BOOKING");
-        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:10];
+        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
         self.titleLabel.textColor = COLOR_MAIN;
         
     }
@@ -124,7 +127,7 @@
             [UIView animateWithDuration:0.3 animations:^{
                 [self.animationImageView setFrame:CGRectMake(0, 0, self.animationImageView.frame.size.width, self.animationImageView.frame.size.height)];
 //                self.titleLabel.text = NSLocalizedString(@"added", @"ADDED");
-                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:10];
+                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
                 self.titleLabel.textColor = COLOR_DARK_TEXT;
             } completion:^(BOOL finished) {
                 self.checkBoxImageView.layer.transform = CATransform3DIdentity;
@@ -135,7 +138,7 @@
             [UIView animateWithDuration:0.3 animations:^{
                 [self.animationImageView setFrame:CGRectMake(-40, 0, self.animationImageView.frame.size.width, self.animationImageView.frame.size.height)];
 //                self.titleLabel.text = NSLocalizedString(@"added", @"ADDED");
-                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:10];
+                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
                 self.titleLabel.textColor = COLOR_DARK_TEXT;
             } completion:^(BOOL finished) {
                 self.checkBoxImageView.layer.transform = CATransform3DIdentity;
@@ -151,7 +154,7 @@
             
             [UIView animateWithDuration:0.3 animations:^{
 //                self.titleLabel.text = NSLocalizedString(@"add_to_your_booking", @"ADD TO YOUR BOOKING");
-                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:10];
+                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
                 self.titleLabel.textColor = COLOR_MAIN;
             } completion:^(BOOL finished) {
                 
@@ -162,7 +165,7 @@
             
             [UIView animateWithDuration:0.3 animations:^{
 //                self.titleLabel.text = NSLocalizedString(@"add_to_your_booking", @"ADD TO YOUR BOOKING");
-                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:10];
+                self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
                 self.titleLabel.textColor = COLOR_MAIN;
             } completion:^(BOOL finished) {
                 
@@ -172,6 +175,12 @@
 }
 
 #pragma mark IBInspectable function
+
+-(void)setFontSize:(NSUInteger)fontSize{
+    _fontSize = fontSize;
+//    [_titleLabel.font fontWithSize:_fontSize];
+    self.titleLabel.font = [UIFont fontWithName:_isOn?@"AvenirNext-Regular":@"AvenirNext-DemiBold" size:_fontSize];
+}
 
 -(void)setCheckedTitle:(NSString *)checkedTitle{
     _checkedTitle = checkedTitle;
@@ -194,14 +203,15 @@
     
     [self.animationImageView setHidden:!isOn];
     [self.uncheckBoxImageView setHidden:isOn];
+    [self.checkBoxImageView setHidden:!isOn];
     self.checkBoxImageView.layer.transform = CATransform3DMakeScale(isOn?1:0.00000001, isOn?1:0.00000001, isOn?1:0.00000001);
     if (isOn) {
         
-        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:10];
+        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
         self.titleLabel.textColor = COLOR_DARK_TEXT;
     }else{
         
-        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:10];
+        self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
         self.titleLabel.textColor = COLOR_MAIN;
 
     }

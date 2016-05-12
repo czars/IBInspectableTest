@@ -17,6 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moz-rj-ZOJ" customClass="TSProductSwitch">
+                                <rect key="frame" x="0.0" y="298" width="600" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="m7e-tp-cg7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="checkedTitle" value="WTF"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unCheckedTitle" value="Here"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="animationImage" value="product_selection_reverse_bg"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reverseAnimation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0p-FG-djs" customClass="TSProductSwitch">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
                                 <constraints>
@@ -26,19 +39,10 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="checkedTitle" value="THIS IS A PEN"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="unCheckedTitle" value="TEST"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moz-rj-ZOJ" customClass="TSProductSwitch">
-                                <rect key="frame" x="0.0" y="298" width="600" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="m7e-tp-cg7"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="checkedTitle" value="WTF"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="unCheckedTitle" value="Here"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="animationImage" value="product_selection_reverse_bg"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reverseAnimation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reverseAnimation" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>

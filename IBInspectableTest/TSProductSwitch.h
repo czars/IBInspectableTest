@@ -27,9 +27,11 @@ IB_DESIGNABLE
 //@property (nonatomic, strong) IBInspectable UIImage *animationImage;
 @property (nonatomic, assign) IBInspectable BOOL isOn;
 @property (nonatomic, assign) IBInspectable BOOL reverseAnimation;
+@property (nonatomic, assign) IBInspectable NSUInteger fontSize;
 @property (nonatomic, strong) IBInspectable NSString *checkedTitle;
 @property (nonatomic, strong) IBInspectable NSString *unCheckedTitle;
 @property (nonatomic, strong) IBInspectable UIImage *animationImage;
+
 
 -(void)setOn:(BOOL)on;
 -(IBAction)pressSwitchButton:(id)sender;
