@@ -24,11 +24,29 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
-    if (self) {
-        [self commonInit];
-    }
-    return self;
+        if (self) {
+            [self commonInit];
+        }
+        return self;
 }
+
+//+ (instancetype)loadFromXib {
+//    NSArray* elements = [[NSBundle bundleForClass:self] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil];
+//    for (id anObject in elements) {
+//        if ([anObject isKindOfClass:[self class]]) {
+//            NSLog(@"get view from xib");
+//            return anObject;
+//        }
+//    }
+//    return nil;
+//}
+
+//- (void)drawRect:(CGRect)rect {
+//    [super drawRect:rect];
+//    [self.layer setBorderWidth: 5.0];
+//    [self.layer setBorderColor: [UIColor redColor].CGColor];
+//    [self setBackgroundColor: [UIColor blueColor]];
+//}
 
 -(void)commonInit{
     UIView *view = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"TSProductSwitch" owner:self options:nil] firstObject];
@@ -40,7 +58,7 @@
     id bindings = @{ @"view": view };
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|" options:0 metrics:nil views:bindings]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:bindings]];
-    
+
     if ([UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionLeftToRight) {
         _reverseAnimation = NO;
     }else if ([UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft){
@@ -191,10 +209,11 @@
 -(void)setIsOn:(BOOL)isOn{
     _isOn = isOn;
     _titleLabel.text = _isOn?_checkedTitle:_unCheckedTitle;
-    
+
     [self.animationImageView setHidden:!isOn];
     [self.uncheckBoxImageView setHidden:isOn];
-    self.checkBoxImageView.layer.transform = CATransform3DMakeScale(isOn?1:0.00000001, isOn?1:0.00000001, isOn?1:0.00000001);
+    [self.checkBoxImageView setHidden:!isOn];
+//    self.checkBoxImageView.layer.transform = CATransform3DMakeScale(isOn?1:0.00000001, isOn?1:0.00000001, isOn?1:0.00000001);
     if (isOn) {
         
         self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:10];

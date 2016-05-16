@@ -17,41 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0p-FG-djs" customClass="TSProductSwitch">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="9GX-Xf-4vb"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thE-cm-nuh" customClass="TSProductSwitch">
+                                <rect key="frame" x="0.0" y="20" width="600" height="78"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="checkedTitle" value="This"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unCheckedTitle" value="IS"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="checkedTitle" value="THIS IS A PEN"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="unCheckedTitle" value="TEST"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moz-rj-ZOJ" customClass="TSProductSwitch">
-                                <rect key="frame" x="0.0" y="298" width="600" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="m7e-tp-cg7"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="checkedTitle" value="WTF"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="unCheckedTitle" value="Here"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="animationImage" value="product_selection_reverse_bg"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reverseAnimation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="animationImage" value="product_selection_bg"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Moz-rj-ZOJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7wF-lT-5mX"/>
-                            <constraint firstAttribute="trailing" secondItem="Moz-rj-ZOJ" secondAttribute="trailing" id="eKd-UI-ySd"/>
-                            <constraint firstItem="n0p-FG-djs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ff5-Xg-MdO"/>
-                            <constraint firstItem="n0p-FG-djs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hnT-9F-Xi1"/>
-                            <constraint firstAttribute="trailing" secondItem="n0p-FG-djs" secondAttribute="trailing" id="yPq-W2-svg"/>
-                            <constraint firstItem="Moz-rj-ZOJ" firstAttribute="top" secondItem="n0p-FG-djs" secondAttribute="bottom" constant="222" id="yaz-PA-UDS"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productSwitch" destination="thE-cm-nuh" id="gnc-pD-4Rb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="product_selection_reverse_bg" width="718" height="70"/>
+        <image name="product_selection_bg" width="718" height="70"/>
     </resources>
 </document>

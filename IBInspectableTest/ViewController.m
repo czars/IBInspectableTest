@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TSProductSwitch.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet TSProductSwitch *productSwitch;
 
 @end
 
@@ -23,5 +25,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - TSProductSwitch Delegae
+
+-(void)didChangeSwitchValue:(BOOL)isOn{
+    NSLog(@"tapped switch control %d",isOn);
+}
+
 
 @end
