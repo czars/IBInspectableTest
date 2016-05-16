@@ -21,6 +21,12 @@
 		88C6B1021CE22A1D00C17723 /* TSProductSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */; };
 		88C6B1031CE22A1D00C17723 /* TSProductSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */; };
 		88C6B1041CE22A1D00C17723 /* TSProductSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */; };
+		D72AD4711CE9BE640004B41A /* TSProductSwitch2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72AD46E1CE9BE640004B41A /* TSProductSwitch2.xib */; };
+		D72AD4721CE9BE640004B41A /* TSProductSwitch2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72AD46E1CE9BE640004B41A /* TSProductSwitch2.xib */; };
+		D72AD4731CE9BE640004B41A /* TSProductSwitch2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72AD46E1CE9BE640004B41A /* TSProductSwitch2.xib */; };
+		D72AD4741CE9BE640004B41A /* TSProductSwitch2.m in Sources */ = {isa = PBXBuildFile; fileRef = D72AD46F1CE9BE640004B41A /* TSProductSwitch2.m */; };
+		D72AD4751CE9BE640004B41A /* TSProductSwitch2.m in Sources */ = {isa = PBXBuildFile; fileRef = D72AD46F1CE9BE640004B41A /* TSProductSwitch2.m */; };
+		D72AD4761CE9BE640004B41A /* TSProductSwitch2.m in Sources */ = {isa = PBXBuildFile; fileRef = D72AD46F1CE9BE640004B41A /* TSProductSwitch2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,9 @@
 		88C6B0FC1CE22A1D00C17723 /* TSProductSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProductSwitch.h; sourceTree = "<group>"; };
 		88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProductSwitch.m; sourceTree = "<group>"; };
 		88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSProductSwitch.xib; sourceTree = "<group>"; };
+		D72AD46E1CE9BE640004B41A /* TSProductSwitch2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSProductSwitch2.xib; sourceTree = "<group>"; };
+		D72AD46F1CE9BE640004B41A /* TSProductSwitch2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProductSwitch2.m; sourceTree = "<group>"; };
+		D72AD4701CE9BE640004B41A /* TSProductSwitch2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProductSwitch2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,9 @@
 				88C6B0FC1CE22A1D00C17723 /* TSProductSwitch.h */,
 				88C6B0FD1CE22A1D00C17723 /* TSProductSwitch.m */,
 				88C6B0FE1CE22A1D00C17723 /* TSProductSwitch.xib */,
+				D72AD46E1CE9BE640004B41A /* TSProductSwitch2.xib */,
+				D72AD46F1CE9BE640004B41A /* TSProductSwitch2.m */,
+				D72AD4701CE9BE640004B41A /* TSProductSwitch2.h */,
 				88C6B0D21CE22A1000C17723 /* Main.storyboard */,
 				88C6B0D51CE22A1000C17723 /* Assets.xcassets */,
 				88C6B0D71CE22A1000C17723 /* LaunchScreen.storyboard */,
@@ -260,6 +272,7 @@
 			files = (
 				88C6B0D91CE22A1000C17723 /* LaunchScreen.storyboard in Resources */,
 				88C6B0D61CE22A1000C17723 /* Assets.xcassets in Resources */,
+				D72AD4711CE9BE640004B41A /* TSProductSwitch2.xib in Resources */,
 				88C6B1021CE22A1D00C17723 /* TSProductSwitch.xib in Resources */,
 				88C6B0D41CE22A1000C17723 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C6B1031CE22A1D00C17723 /* TSProductSwitch.xib in Resources */,
+				D72AD4721CE9BE640004B41A /* TSProductSwitch2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C6B1041CE22A1D00C17723 /* TSProductSwitch.xib in Resources */,
+				D72AD4731CE9BE640004B41A /* TSProductSwitch2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C6B0D11CE22A1000C17723 /* ViewController.m in Sources */,
+				D72AD4741CE9BE640004B41A /* TSProductSwitch2.m in Sources */,
 				88C6B0CE1CE22A1000C17723 /* AppDelegate.m in Sources */,
 				88C6B0FF1CE22A1D00C17723 /* TSProductSwitch.m in Sources */,
 				88C6B0CB1CE22A1000C17723 /* main.m in Sources */,
@@ -301,6 +317,7 @@
 			files = (
 				88C6B1001CE22A1D00C17723 /* TSProductSwitch.m in Sources */,
 				88C6B0E41CE22A1100C17723 /* IBInspectableTestTests.m in Sources */,
+				D72AD4751CE9BE640004B41A /* TSProductSwitch2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +327,7 @@
 			files = (
 				88C6B1011CE22A1D00C17723 /* TSProductSwitch.m in Sources */,
 				88C6B0EF1CE22A1100C17723 /* IBInspectableTestUITests.m in Sources */,
+				D72AD4761CE9BE640004B41A /* TSProductSwitch2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +535,7 @@
 				88C6B0F51CE22A1100C17723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88C6B0F61CE22A1100C17723 /* Build configuration list for PBXNativeTarget "IBInspectableTestTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +544,7 @@
 				88C6B0F81CE22A1100C17723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88C6B0F91CE22A1100C17723 /* Build configuration list for PBXNativeTarget "IBInspectableTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +553,7 @@
 				88C6B0FB1CE22A1100C17723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

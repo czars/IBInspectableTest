@@ -66,8 +66,6 @@
     _fontSize = 10;
     _isOn = NO;
     
-    
-//    [self setOn:_isOn];
 }
 
 -(void)setOn:(BOOL)on{
@@ -76,12 +74,10 @@
     [self.checkBoxImageView setHidden:!on];
     self.checkBoxImageView.layer.transform = CATransform3DMakeScale(on?1:0.00000001, on?1:0.00000001, on?1:0.00000001);
     if (on) {
-//        self.titleLabel.text = NSLocalizedString(@"added", @"ADDED");
         self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
         self.titleLabel.textColor = COLOR_DARK_TEXT;
         
     }else{
-//        self.titleLabel.text = NSLocalizedString(@"add_to_your_booking", @"ADD TO YOUR BOOKING");
         self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
         self.titleLabel.textColor = COLOR_MAIN;
         
@@ -144,7 +140,6 @@
             [self.animationImageView setHidden:NO];
             [UIView animateWithDuration:0.3 animations:^{
                 [self.animationImageView setFrame:CGRectMake(0, 0, self.animationImageView.frame.size.width, self.animationImageView.frame.size.height)];
-//                self.titleLabel.text = NSLocalizedString(@"added", @"ADDED");
                 self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
                 self.titleLabel.textColor = COLOR_DARK_TEXT;
             } completion:^(BOOL finished) {
@@ -155,7 +150,6 @@
             [self.animationImageView setHidden:NO];
             [UIView animateWithDuration:0.3 animations:^{
                 [self.animationImageView setFrame:CGRectMake(-40, 0, self.animationImageView.frame.size.width, self.animationImageView.frame.size.height)];
-//                self.titleLabel.text = NSLocalizedString(@"added", @"ADDED");
                 self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
                 self.titleLabel.textColor = COLOR_DARK_TEXT;
             } completion:^(BOOL finished) {
@@ -171,7 +165,6 @@
             [self.animationImageView setFrame:CGRectMake(-self.animationImageView.frame.size.width, 0, self.animationImageView.frame.size.width, self.animationImageView.frame.size.height)];
             
             [UIView animateWithDuration:0.3 animations:^{
-//                self.titleLabel.text = NSLocalizedString(@"add_to_your_booking", @"ADD TO YOUR BOOKING");
                 self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
                 self.titleLabel.textColor = COLOR_MAIN;
             } completion:^(BOOL finished) {
@@ -182,7 +175,6 @@
             [self.animationImageView setFrame:CGRectMake(self.animationImageView.frame.size.width-40, 0, self.animationImageView.frame.size.width, self.animationImageView.frame.size.height)];
             
             [UIView animateWithDuration:0.3 animations:^{
-//                self.titleLabel.text = NSLocalizedString(@"add_to_your_booking", @"ADD TO YOUR BOOKING");
                 self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:_fontSize];
                 self.titleLabel.textColor = COLOR_MAIN;
             } completion:^(BOOL finished) {
@@ -196,7 +188,6 @@
 
 -(void)setFontSize:(NSUInteger)fontSize{
     _fontSize = fontSize;
-//    [_titleLabel.font fontWithSize:_fontSize];
     self.titleLabel.font = [UIFont fontWithName:_isOn?@"AvenirNext-Regular":@"AvenirNext-DemiBold" size:_fontSize];
 }
 
@@ -222,7 +213,6 @@
     [self.animationImageView setHidden:!isOn];
     [self.uncheckBoxImageView setHidden:isOn];
     [self.checkBoxImageView setHidden:!isOn];
-//    self.checkBoxImageView.layer.transform = CATransform3DMakeScale(isOn?1:0.00000001, isOn?1:0.00000001, isOn?1:0.00000001);
     if (isOn) {
         
         self.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:_fontSize];
